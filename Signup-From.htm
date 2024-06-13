@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Signup</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* place-items: center; */
+        margin: 5% 0px 0px 35%;
+        padding: 20px;
+        width: 450px;
+        height: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        /* box-shadow: 0 2px 100px rgba(208, 13, 13, 0.1); */
+
+        box-shadow: 0 0 20px red;
+      }
+      h1 {
+        justify-content: center;
+
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 0px 0px 30px 0px;
+      }
+      input[type="username"] {
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-decoration: none;
+        border: 1px solid #d7d6d6;
+        margin: 10px;
+      }
+      input[type="email"] {
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-decoration: none;
+        border: 1px solid #d7d6d6;
+        margin: 10px;
+      }
+      input[type="password"] {
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-decoration: none;
+        border: 1px solid #d7d6d6;
+        margin: 10px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        width: 300px;
+        border-radius: 10px;
+        text-decoration: none;
+        border: 1px solid rgb(230, 224, 224);
+        margin-top: 45px;
+        background-color: #8778df;
+        color: rgb(252, 252, 255);
+      }
+      input[type="submit"]:hover {
+        background-color: #3d25c6;
+        color: rgb(251, 251, 251);
+        font-weight: 700;
+      }
+      /* input[type=":checkbox"] {
+        float: inline-start;
+        accent-color: blue;
+        margin-left: -50px;
+      } */
+      .two {
+        float: left;
+        padding-left: 12px;
+      }
+
+      p {
+        margin-top: 5px;
+        word-spacing: 2px;
+        margin-bottom: -20px;
+      }
+      sup {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="Signup-From.htm" method="post">
+        <h1>Signup Form</h1>
+
+        <span>Username<sup>*</sup> :</span>
+        <input
+          type="Username"
+          name="Username"
+          placeholder="Username"
+          required
+        />
+
+        <span>Email-Id<sup>*</sup> :</span>
+        <input type="email" name="Email" placeholder="Email" required />
+
+        <span>Password<sup>*</sup> :</span
+        ><input
+          type="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+
+        <br />
+        <p class="two"><input type="checkbox" />Remember me</p>
+        <input type="submit" name="button" value="Signup" />
+        <br />
+        <p>Do you have an account?<a href="Login-From.htm">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>
